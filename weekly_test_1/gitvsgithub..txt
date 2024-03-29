@@ -1,0 +1,35 @@
+What is git
+Git is a distributed version control system (VCS) that enables multiple developers to collaborate on a project
+
+VCS
+It's like a time machine for code, allowing us to go back to any point in its history and see or undo changes.
+
+Why Git is used OR its Functionality: 
+Git makes it easy for multiple people to collaborate on coding projects by keeping track of who did what and when, 
+and it helps avoid chaos when many people are working on the same project.
+
+Local Repository: 
+A local repository is a copy of a Git project that resides on the user's computer. 
+Developers work on their local repositories and can synchronize changes with a remote repository.
+
+Command Line Tool: 
+Git can be operated through a command-line interface (CLI), allowing users to execute commands by 
+typing text commands into a terminal or command prompt.
+
+Example of some GIT commands:
+git init: It Initializes a new Git repository.
+git add : It Adds changes to the staging area.
+git status: It Shows the status of changes as untracked, modified, or staged.
+git push: It Uploads local changes to a remote repository.typing text commands into a terminal or command prompt.
+
+Now Github
+GitHub is a web-based platform that provides hosting for Git repositories.It works on top of git
+
+It helps in collabotration with features like
+Fork: In this Users can create their copy (of a repository to make changes independently.
+Pull Requests: In this Contributors propose changes to the original repository, making collaboration easy.
+
+Hosting 
+we can host html files through git without using any other hosting services
+
+Alternatives:- Gitlab,Sourceforge
