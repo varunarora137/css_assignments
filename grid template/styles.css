@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ecf2f8;
+}
+
+.container {
+  width: 73%;
+  height: 82vh;
+  display: grid;
+  grid-template-rows: 52% 48%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 52px auto;
+}
+.div1 {
+  background-color: #7541c8;
+  background-image: url("https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg");
+  grid-column: 1/3;
+  background-position: top right 10%;
+  border-radius: 8px;
+  padding: 32px 50px 42px 32px;
+  background-repeat: no-repeat;
+}
+.div2 {
+  background-color: #48556a;
+  border-radius: 8px;
+  padding: 32px 42px 42px 32px;
+}
+.div3 {
+  background-color: #ffffff;
+  grid-area: 1/-2/-1/-1;
+  border-radius: 8px;
+  padding: 32px 42px 42px 32px;
+}
+.div4 {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 32px 35px 42px 32px;
+}
+.div5 {
+  background-color: #19212e;
+  border-radius: 8px;
+  grid-column: 2/-2;
+  padding: 32px 42px 42px 32px;
+}
+img {
+  border-radius: 50%;
+  height: 28px;
+  width: 29.5px;
+}
+/* div1 styling */
+.div1 > div {
+  display: flex;
+  gap: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+.div1 p {
+  font-weight: 600;
+  font-size: 11px;
+  color: #d5c6ee;
+}
+.div1 > p:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.div1 > p:nth-child(3) {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #d5c6ee;
+}
+/* div2 styling */
+.div2 > div {
+  display: flex;
+  gap: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+.div2 p {
+  font-weight: 600;
+  font-size: 11px;
+  color: #c8ccd3;
+}
+.div2 > p:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.div2 > p:nth-child(3) {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #c8ccd3;
+}
+/* div3 styling */
+.div3 > div {
+  display: flex;
+  gap: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: #48556a;
+}
+.div3 p {
+  font-weight: 500;
+  font-size: 11px;
+  color: #a3aab4;
+}
+.div3 > p:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #48556a;
+}
+.div3 > p:nth-child(3) {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #88919f;
+}
+/* div4 styling */
+.div4 > div {
+  display: flex;
+  gap: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: #48556a;
+}
+.div4 p {
+  font-weight: 500;
+  font-size: 11px;
+  color: #a3aab4;
+}
+.div4 > p:nth-child(2) {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #48556a;
+}
+.div4 > p:nth-child(3) {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #88919f;
+}
+/* div5 styling */
+.div5 > div {
+  display: flex;
+  gap: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+.div5 p {
+  font-weight: 600;
+  font-size: 11px;
+  color: #8c9097;
+}
+.div5 > p:nth-child(2) {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.div5 > p:nth-child(3) {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  color: #babdc1;
+}
+h5 {
+  font-weight: 500;
+}
