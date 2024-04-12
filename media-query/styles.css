@@ -50,7 +50,7 @@ p {
   letter-spacing: 1px;
   font-size: 13px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
   .content {
     padding: 40px;
     flex-direction: column;
@@ -60,6 +60,8 @@ p {
   }
   img {
     width: 90%;
+    height: 450px;
+    transform: translateY(-17%);
   }
   .text-container {
     margin: 0;
