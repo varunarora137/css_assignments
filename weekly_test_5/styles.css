@@ -1,0 +1,638 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+html {
+  overflow-x: hidden;
+}
+.black-border {
+  width: 100vw;
+  height: 15px;
+  background-color: black;
+}
+.grey-border {
+  width: 100vw;
+  height: 5px;
+  background-color: #e8e9eb;
+}
+navbar {
+  height: 75px;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  box-shadow: 0 0 3px grey;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+navbar .div1 {
+  display: flex;
+  align-items: center;
+}
+navbar img {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+navbar img:hover {
+  opacity: 0.8;
+}
+navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  letter-spacing: 1px;
+}
+navbar ul li a {
+  color: black;
+}
+navbar ul li a:hover {
+  color: #ff4a32;
+  cursor: pointer;
+}
+navbar .div2 {
+  display: flex;
+  gap: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+navbar .dropdown {
+  position: relative;
+}
+navbar .dropdown div {
+  position: absolute;
+  top: 45px;
+  left: -10px;
+  width: 200px;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+navbar .dropdown div a {
+  color: black;
+  display: block;
+  padding: 10px 16px;
+}
+navbar .dropdown:hover div {
+  display: block;
+}
+navbar .dropdown:hover .fa-caret-down {
+  display: none;
+}
+navbar .dropdown .fa-caret-up {
+  display: none;
+}
+navbar .dropdown:hover .fa-caret-up {
+  display: inline;
+}
+.hero {
+  width: 100%;
+  cursor: pointer;
+}
+.hero1 {
+  display: flex;
+  width: 100%;
+  height: 106vh;
+  position: relative;
+}
+.hero1 .img1-precontainer {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.hero1 .img1-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://boostedusa.com/cdn/shop/files/boosted-rev-electric-scooter-now-in-stock_c5926a3e-f2ff-46a9-9c91-97765798bac4_1000x.jpg?v=1646159164");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s linear;
+  position: relative;
+}
+.hero1 .img1-container::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img1-container-content {
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+.img1-container img {
+  width: 280px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.hero1 .img2-precontainer {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.hero1 .img2-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://boostedusa.com/cdn/shop/files/Boosted-USA-Super-73-Home-Box-feature-600x544_1000x.jpg?v=1680839620");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s linear;
+}
+.hero1 .img2-container::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.img2-container-content {
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+.img2-container img {
+  width: 700px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+.hero2 {
+  display: flex;
+  width: 100%;
+  height: 106vh;
+  position: relative;
+}
+.hero2 .img3-precontainer {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.hero2 .img3-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("https://boostedusa.com/cdn/shop/files/evolve-electric-skateboard-now-in-stock_1000x.jpg?v=1646159245");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  transition: transform 0.3s linear;
+}
+.hero2 .img3-container::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img3-container-content {
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+.img3-container img {
+  width: 280px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.hero2 .img4-precontainer {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.hero2 .img4-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("https://boostedusa.com/cdn/shop/files/minimotors-electric-scooters-2_1000x.jpg?v=1655828690");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s linear;
+}
+.hero2 .img4-container::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.img4-container-content {
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+.img4-container img {
+  width: 280px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+.hero1 .img1-container:hover,
+.hero1 .img2-container:hover,
+.hero2 .img3-container:hover,
+.hero2 .img4-container:hover {
+  transform: scale(1.1);
+}
+.bottom-hero {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 80px;
+}
+.bottom-hero img {
+  width: 150px;
+  height: 50px;
+}
+.section1 {
+  padding-top: 50px;
+  text-align: center;
+}
+.section1 h1 {
+  font-size: 32px;
+}
+.section1 a {
+  color: red;
+}
+.ruler {
+  height: 2px;
+  width: 70px;
+  background-color: grey;
+  margin: 40px auto;
+}
+.image-content1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.image-content1 img {
+  width: 435px;
+  height: 435 px;
+  margin: 0 170px;
+}
+.image-content1 p {
+  font-size: 15px;
+}
+.image-content1 h1 {
+  font-size: 32px;
+}
+.image-content1 div:last-child {
+  margin-left: 20px;
+  width: 510px;
+  line-height: 1.5;
+  letter-spacing: 1.1;
+}
+.btn {
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #ff4a32;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #606060;
+}
+.image-content2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.image-content2 img {
+  width: 580px;
+  height: calc(100vh - 75px);
+  margin-right: 170px;
+}
+.image-content2 p {
+  font-size: 15px;
+}
+.image-content2 h1 {
+  font-size: 32px;
+}
+.image-content2 div:first-child {
+  margin-left: 170px;
+  margin-right: 50px;
+  line-height: 1.5;
+  letter-spacing: 1.1;
+}
+.image-content3 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.image-content3 img {
+  width: 580px;
+  height: calc(100vh - 75px);
+  margin-left: 170px;
+}
+.image-content3 p {
+  font-size: 15px;
+}
+.image-content3 h1 {
+  font-size: 32px;
+}
+.image-content3 div:last-child {
+  margin-left: 40px;
+  width: 510px;
+  line-height: 1.5;
+  letter-spacing: 1.1;
+}
+.image-content4 {
+  background: url("https://boostedusa.com/cdn/shop/files/boosted-rev-display_2000x.jpg?v=1646160921");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 55px);
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+}
+.image-content4 h1 {
+  font-size: 45px;
+}
+
+.btn-extended {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.video {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding-left: 180px;
+}
+
+.image-content5 {
+  background: url("https://boostedusa.com/cdn/shop/files/evolve-skateboards-1_2000x.jpg?v=1646161047");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 110px);
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  color: white;
+}
+.image-content5 h1 {
+  font-size: 45px;
+}
+.items1 > h1,
+.items2 > h1,
+.items3 > h1 {
+  text-align: center;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.items1 > h1:hover,
+.items2 > h1:hover,
+.items3 > h1:hover {
+  color: #ff4a32;
+}
+.ruler {
+  margin-top: 25px;
+}
+.items1-img,
+.items2-img,
+.items3-img {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #ff4a32;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+.items1-img div,
+.items2-img div,
+.items3-img div {
+  width: 200px;
+}
+
+.items1-img div p:last-child,
+.items2-img div p:last-child,
+.items3-img div p:last-child {
+  color: black;
+}
+#sold {
+  color: grey;
+}
+#discount {
+  color: #ff4a32;
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+#from {
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.7;
+}
+.items2-img7 img {
+  width: 200px;
+}
+.items1-img img,
+.items2-img img,
+.items3-img img {
+  margin-bottom: 10px;
+}
+#sale {
+  position: absolute;
+  right: 0;
+  background-color: #ff4a32;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+.items1-img7,
+.items2-img3 {
+  position: relative;
+}
+.subscription {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+.subscription form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.subscription input[type="email"] {
+  height: 45px;
+  border: none;
+  border-radius: 4px;
+}
+.subscription input[type="submit"] {
+  height: 45px;
+  outline: none;
+  border: none;
+  background-color: #ff4a32;
+  color: white;
+  font-size: 17px;
+  transition: 0.2s linear;
+  border-radius: 4px;
+}
+.subscription input[type="submit"]:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.subscription a {
+  color: black;
+  text-decoration: underline;
+}
+.contact {
+  margin-top: 10px;
+  background-color: #a0a0a0;
+  border-radius: 10px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 10px;
+}
+#reqd {
+  color: #ff4a32;
+  font-weight: 800;
+  position: absolute;
+  left: -12px;
+  top: -3px;
+}
+label {
+  position: relative;
+  font-weight: 600;
+}
+.subscription form p {
+  color: #323232;
+  font-size: 11px;
+  text-align: center;
+}
+.specifications {
+  padding: 50px 90px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.specifications div {
+  width: 280px;
+  text-align: center;
+  font-size: 15px;
+}
+.specifications div img {
+  width: 80px;
+}
+.specifications div h1 {
+  margin-bottom: 25px;
+}
+.footer-nav {
+  padding: 50px 170px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+}
+
+.footer-nav div {
+  width: 380px;
+}
+.footer-nav img {
+  height: 130px;
+  margin-right: 210px;
+  transition: 0.3s linear;
+}
+.footer-nav img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.footer-nav a {
+  color: black;
+  font-size: 15px;
+  transition: 0.3s linear;
+}
+.footer-nav a:hover {
+  color: #ff4a32;
+}
+.footer-nav ul {
+  list-style: none;
+  line-height: 1.3;
+}
+.footer-nav div p {
+  line-height: 1.3;
+  font-size: 15px;
+}
+.main-footer {
+  padding: 20px 170px 30px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer a {
+  color: #ff4a32;
+}
