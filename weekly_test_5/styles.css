@@ -472,6 +472,12 @@ navbar .dropdown:hover .fa-caret-up {
   width: 200px;
 }
 
+.items1-img a,
+.items2-img a,
+.items3-img a {
+  color: #ff4a32;
+}
+
 .items1-img div p:last-child,
 .items2-img div p:last-child,
 .items3-img div p:last-child {
