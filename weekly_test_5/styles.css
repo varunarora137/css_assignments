@@ -64,6 +64,9 @@ navbar ul li a:hover {
   color: #ff4a32;
   cursor: pointer;
 }
+navbar i:hover {
+  color: #ff4a32;
+}
 navbar .div2 {
   display: flex;
   gap: 10px;
@@ -640,5 +643,8 @@ label {
   justify-content: space-between;
 }
 .main-footer a {
+  color: #ff4a32;
+}
+u {
   color: #ff4a32;
 }
