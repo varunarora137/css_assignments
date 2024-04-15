@@ -5,12 +5,14 @@
 }
 body {
   font-family: "roboto", sans-serif;
+  /* position: relative; */
 }
 a {
   text-decoration: none;
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .black-border {
   width: 100vw;
@@ -111,7 +113,6 @@ navbar .dropdown:hover .fa-caret-up {
   display: flex;
   width: 100%;
   height: 106vh;
-  position: relative;
 }
 .hero1 .img1-precontainer {
   width: 50%;
@@ -142,12 +143,14 @@ navbar .dropdown:hover .fa-caret-up {
 .img1-container-content {
   height: 100%;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  margin-top: 330px;
+}
+.img1-precontainer p {
+  position: absolute;
+  top: 505px;
+  left: 170px;
   font-size: 18px;
-  letter-spacing: 1.2px;
 }
 .img1-container img {
   width: 280px;
@@ -184,12 +187,18 @@ navbar .dropdown:hover .fa-caret-up {
 .img2-container-content {
   height: 100%;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  margin-top: 260px;
+}
+.img2-precontainer p {
+  position: absolute;
   font-size: 18px;
-  letter-spacing: 1.2px;
+  top: 545px;
+  right: 280px;
+}
+.img2-precontainer p:last-child {
+  top: 570px;
+  right: 310px;
 }
 .img2-container img {
   width: 700px;
@@ -200,12 +209,12 @@ navbar .dropdown:hover .fa-caret-up {
   display: flex;
   width: 100%;
   height: 106vh;
-  position: relative;
 }
 .hero2 .img3-precontainer {
   width: 50%;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 .hero2 .img3-container {
   width: 100%;
@@ -228,15 +237,18 @@ navbar .dropdown:hover .fa-caret-up {
   top: 0;
   left: 0;
 }
+
 .img3-container-content {
   height: 100%;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  margin-top: 330px;
+}
+.img3-precontainer p {
+  position: absolute;
+  top: 410px;
+  left: 125px;
   font-size: 18px;
-  letter-spacing: 1.2px;
 }
 .img3-container img {
   width: 280px;
@@ -248,6 +260,7 @@ navbar .dropdown:hover .fa-caret-up {
   width: 50%;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 .hero2 .img4-container {
   width: 100%;
@@ -270,15 +283,18 @@ navbar .dropdown:hover .fa-caret-up {
   top: 0;
   right: 0;
 }
+
 .img4-container-content {
   height: 100%;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  margin-top: 330px;
+}
+.img4-precontainer p {
+  position: absolute;
+  top: 410px;
+  right: 140px;
   font-size: 18px;
-  letter-spacing: 1.2px;
 }
 .img4-container img {
   width: 280px;
@@ -329,6 +345,7 @@ navbar .dropdown:hover .fa-caret-up {
   width: 435px;
   height: 435 px;
   margin: 0 170px;
+  transition: 0.2s linear;
 }
 .image-content1 p {
   font-size: 15px;
@@ -341,6 +358,12 @@ navbar .dropdown:hover .fa-caret-up {
   width: 510px;
   line-height: 1.5;
   letter-spacing: 1.1;
+}
+.image-content1 div:first-child {
+  overflow: hidden;
+}
+.image-content1 div img:hover {
+  transform: scale(1.1);
 }
 .btn {
   border-radius: 20px;
@@ -389,6 +412,7 @@ navbar .dropdown:hover .fa-caret-up {
   width: 580px;
   height: calc(100vh - 75px);
   margin-left: 170px;
+  transition: 0.2s linear;
 }
 .image-content3 p {
   font-size: 15px;
@@ -396,11 +420,17 @@ navbar .dropdown:hover .fa-caret-up {
 .image-content3 h1 {
   font-size: 32px;
 }
+.image-content3 div:first-child {
+  overflow: hidden;
+}
 .image-content3 div:last-child {
   margin-left: 40px;
   width: 510px;
   line-height: 1.5;
   letter-spacing: 1.1;
+}
+.image-content3 div img:hover {
+  transform: scale(1.1);
 }
 .image-content4 {
   background: url("https://boostedusa.com/cdn/shop/files/boosted-rev-display_2000x.jpg?v=1646160921");
@@ -535,8 +565,12 @@ navbar .dropdown:hover .fa-caret-up {
 }
 .subscription input[type="email"] {
   height: 45px;
-  border: none;
+  border: 1px solid lightgrey;
   border-radius: 4px;
+  padding-left: 15px;
+}
+.subscription input[type="email"]:focus {
+  outline: 1px solid #5dacd6;
 }
 .subscription input[type="submit"] {
   height: 45px;
