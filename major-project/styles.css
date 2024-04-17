@@ -1,0 +1,844 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.navbar {
+  height: 8vh;
+  width: 100%;
+  background-color: #113448;
+  position: fixed;
+  display: flex;
+  padding-left: 1.5rem;
+  padding-right: 9rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 4;
+}
+.navbar .logo img {
+  height: 3.3rem;
+  width: 25rem;
+  cursor: pointer;
+}
+.navbar .links-logo ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+.navbar .links-logo ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.navbar .links-logo ul li:first-child a {
+  color: #14bf98;
+}
+.navbar .links-logo ul li a:hover {
+  color: #14bf98;
+}
+.navbar .links-logo ul li i:hover {
+  color: #14bf98;
+}
+.navbar .links-logo {
+  display: flex;
+  gap: 4rem;
+}
+.navbar .links-logo i {
+  margin-top: 0.4rem;
+  font-size: 1.4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .links-logo i:hover {
+  color: #14bf98;
+}
+.hexa1 {
+  position: absolute;
+  width: 2.5rem;
+  z-index: -1;
+  top: 1.75rem;
+  right: 12.2rem;
+}
+.navbar path {
+  fill: #14bf98;
+}
+.navbar .icon-svg:hover svg path {
+  fill: white;
+}
+.navbar .icon-svg:hover i {
+  color: #14bf98;
+}
+.hexa2 {
+  position: absolute;
+  right: 8.5rem;
+  width: 2.5rem;
+  z-index: -2;
+  top: 1.75rem;
+}
+.background-img {
+  height: 125vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("./images/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.background-img h1 {
+  font-size: 6rem;
+}
+.background-img p {
+  font-size: 1.8rem;
+}
+.background-img .btn {
+  margin: 3rem;
+  padding: 1.5rem 4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #14bf98;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #14bf98;
+  transition: 0.1s linear;
+}
+.background-img .btn:hover {
+  color: #14bf98;
+  background-color: transparent;
+}
+main .intro {
+  padding: 11rem 20rem;
+}
+.intro .img-content {
+  display: flex;
+  gap: 9rem;
+  align-items: center;
+}
+.intro .img-content .image-container {
+  height: 41rem;
+  width: 63rem;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+.intro .img-content .image-container img {
+  height: 41rem;
+  width: 63rem;
+  transition: 0.1s linear;
+}
+.intro .img-content .image-container img:hover {
+  transform: scale(1.1);
+}
+.intro .img-content .content {
+  width: 40rem;
+  font-size: 1.6rem;
+  color: #787976;
+}
+.intro .img-content .content p:first-child {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  color: #14bf98;
+}
+.intro .img-content .content h2 {
+  font-size: 2.9rem;
+  color: #484a46;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.intro .img-content .content h4 {
+  color: #484a46;
+}
+.intro .logo-content {
+  padding-top: 10rem;
+  display: flex;
+  flex: 1;
+}
+.intro .logo-content div:not(div:last-child) {
+  margin-right: 4rem;
+}
+.intro .logo-content p {
+  font-size: 1.6rem;
+  color: #787976;
+}
+.intro .logo-content h1 {
+  color: #484a46;
+}
+.intro .logo-content i {
+  font-size: 3rem;
+  position: relative;
+  top: -5rem;
+  left: 3.3rem;
+  color: #fff;
+}
+.intro svg {
+  width: 9rem;
+  padding-bottom: 2rem;
+  position: relative;
+  left: -3rem;
+  z-index: -1;
+}
+.services {
+  background-color: #fbfbfb;
+  padding: 11rem 20rem;
+}
+.services > p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #14bf98;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+.services h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #484a46;
+}
+.services-card-container {
+  margin-top: 5rem;
+  display: flex;
+  flex: 1;
+  gap: 6rem;
+}
+.services-card-container div img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.services-card-container > div {
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.services-card1-content,
+.services-card2-content,
+.services-card3-content {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  padding-left: 3rem;
+  margin-right: 3rem;
+}
+.services-card1-content h2,
+.services-card2-content h2,
+.services-card3-content h2 {
+  text-align: center;
+  padding: 0 0.9rem;
+  font-size: 2.2rem;
+  color: #484a46;
+}
+.services-card1-content p,
+.services-card2-content p,
+.services-card3-content p {
+  color: #787976;
+  margin: 1.2rem 0;
+  font-size: 1.6rem;
+}
+.services-card1-content ul,
+.services-card2-content ul,
+.services-card3-content ul {
+  margin-left: 1.5rem;
+  color: #787976;
+  font-size: 1.6rem;
+  list-style-type: square;
+}
+.services-card-container li::marker {
+  color: #14bf98;
+}
+.services-card1-content h3,
+.services-card2-content h3,
+.services-card3-content h3 {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  color: #484a46;
+  text-align: center;
+}
+.dollar {
+  color: #14bf98;
+}
+.services-button {
+  position: absolute;
+  bottom: -1.9rem;
+  z-index: 1;
+  left: 12rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid #14bf98;
+  background-color: #14bf98;
+  border-radius: 0.3rem;
+  color: white;
+  transition: 0.1s linear;
+}
+.services-button:hover {
+  background-color: white;
+  color: #14bf98;
+}
+.services2-div1 {
+  display: flex;
+  gap: 7rem;
+  align-items: center;
+}
+.services2-div1-content h1 {
+  color: #484a46;
+  font-size: 2.8rem;
+}
+.services2-div1 img {
+  width: 50vw;
+  height: 78vh;
+}
+.services2-div1-content div {
+  display: flex;
+  align-items: center;
+  color: #484a46;
+  margin: 2rem 0;
+  position: relative;
+  cursor: pointer;
+}
+.services2-div1-content div h2 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.services2-div1-content span {
+  font-size: 2rem;
+  position: absolute;
+  left: 1.5rem;
+}
+.services2-div1-content div:hover {
+  color: #14bf98;
+}
+.services2-div1-content div:hover svg circle {
+  stroke: #14bf98;
+}
+.services2-div2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 9rem;
+  align-items: center;
+}
+.services2-div2 img {
+  width: 49vw;
+  height: 78vh;
+}
+.services2-div2-content {
+  padding-left: 23rem;
+}
+.services2-div2-content .headings {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  color: #c1cace;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.services2-div2-content .headings i {
+  font-size: 1.8rem;
+}
+.services2-div2-content .headings div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 0.1s linear;
+}
+.services2-div2-content .headings div:first-child {
+  color: #14bf98;
+}
+.services2-div2-content .headings div:hover {
+  color: #14bf98;
+}
+.services2-div2-content .services2-div2-details h1 {
+  font-size: 2.2rem;
+  color: #484a46;
+}
+.services2-div2-content .services2-div2-details p {
+  font-size: 1.6rem;
+  color: #787976;
+  margin-bottom: 2.5rem;
+}
+.services2-div2-content .services2-div2-details a {
+  text-decoration: underline;
+  color: #14bf98;
+}
+.services2-div2-content .percentage > div {
+  margin-bottom: 1.5rem;
+  color: #484a46;
+  font-size: 1.8rem;
+}
+.services2-div2-content .percentage .div1-percentage div,
+.services2-div2-content .percentage .div2-percentage div,
+.services2-div2-content .percentage .div3-percentage div {
+  width: 45rem;
+  height: 2.2rem;
+  background-color: #14bf98;
+  margin-top: 0.5rem;
+  border-radius: 0.2rem;
+}
+.services2-div2-content .percentage .div2-percentage div {
+  background: linear-gradient(to right, #14bf98 76%, #f9fafc 24%);
+}
+.services2-div2-content .percentage .div3-percentage div {
+  background: linear-gradient(to right, #14bf98 90%, #f9fafc 10%);
+}
+.Testimonials-container {
+  padding-top: 10rem;
+  background-color: #fbfbfb;
+  padding-bottom: 10rem;
+}
+.Testimonials-header {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #787976;
+}
+.Testimonials-header h2 {
+  font-size: 2.8rem;
+  color: #484a46;
+}
+.Testimonials-content {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  text-align: center;
+  overflow: hidden;
+}
+.testimonial-text {
+  font-style: italic;
+}
+.card-image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.Testimonials1,
+.Testimonials2,
+.Testimonials3 {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.Testimonials-content i {
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  color: #787976;
+}
+.testimonial-text {
+  font-size: 1.6rem;
+  color: #787976;
+}
+.testimonial-author {
+  font-size: 1.7rem;
+  color: #484a46;
+  font-weight: 700;
+}
+.call-me-form {
+  padding: 10rem 25rem 8rem;
+  background-color: #113448;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+.call-me-content {
+  color: white;
+  width: 45rem;
+}
+.call-me {
+  color: #14bf98;
+  font-size: 1.3rem;
+}
+.call-me-content h1 {
+  font-size: 2.8rem;
+}
+.call-me-content p {
+  font-size: 1.6rem;
+  color: #dfe5ec;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.call-me-content ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  font-size: 1.6rem;
+  color: #dfe5ec;
+}
+.call-me-content li::marker {
+  color: #14bf98;
+}
+.call-me-form form input,
+select {
+  height: 5rem;
+  width: 46.6rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #39728f;
+  background-color: #2a5d77;
+  color: white;
+  outline: none;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+}
+.call-me-form form input:hover,
+select:hover {
+  border: 1px solid white;
+}
+.call-me-form form input:focus,
+select:focus {
+  border: 1px solid white;
+}
+.call-me-form form input::placeholder {
+  color: white;
+}
+.call-me-form label {
+  font-size: 1.4rem;
+  color: white;
+}
+.call-me-form label a {
+  color: white;
+}
+.call-me-form form input[type="checkbox"] {
+  height: 2rem;
+  width: 1.3rem;
+}
+.call-me-form form input[type="submit"] {
+  padding-right: 2.3rem;
+  background-color: #14bf98;
+  color: white;
+  border: 1px solid #14bf98;
+  transition: 0.1s linear;
+}
+.call-me-form form input[type="submit"]:hover {
+  background-color: transparent;
+  color: #14bf98;
+}
+.projects {
+  padding: 10rem 20rem;
+  text-align: center;
+}
+.projects span {
+  color: #14bf98;
+  font-size: 1.3rem;
+}
+.projects h1 {
+  font-size: 2.8rem;
+  color: #484a46;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+}
+.projects button {
+  padding: 0.8rem 2rem;
+  margin-right: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #f1f4f7;
+  color: #787976;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+.projects .showall {
+  color: white;
+  background-color: #14bf98;
+}
+.projects button:hover {
+  color: white;
+  background-color: #14bf98;
+}
+.projects .image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: 270px 270px;
+  overflow: hidden;
+  grid-row-gap: 0;
+  grid-column-gap: 0;
+}
+.projects .img-container {
+  overflow: hidden;
+  background-color: black;
+}
+.projects .img-container img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.projects .img-container img:hover {
+  transform: scale(1.2);
+  filter: opacity(0.7);
+}
+.projects .img-container p {
+  position: relative;
+  bottom: 55%;
+  color: white;
+  display: none;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.projects .img-container:hover p {
+  display: block;
+}
+.consultants-container {
+  background-color: #fbfbfb;
+  padding: 10rem 22rem;
+}
+.consultants-container h1 {
+  font-size: 2.8rem;
+  color: #484a46;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.consultants-container > p {
+  font-size: 1.6rem;
+  color: #787976;
+  text-align: center;
+}
+.consultants-div {
+  margin-top: 6rem;
+  display: flex;
+  gap: 5rem;
+}
+.consultants-div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.consultants-div img {
+  transition: 0.2s linear;
+}
+.consultants-div img:hover {
+  transform: scale(1.1);
+}
+.consultants-div p {
+  margin: 2rem 0 0.6rem 0;
+  font-size: 1.8rem;
+  color: #787976;
+}
+.consultants-div h5 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #484a46;
+}
+.consultants-div svg1,
+.consultants-div svg2 {
+  z-index: -1;
+}
+.consultants-div i {
+  position: relative;
+  left: -2.2rem;
+  top: -1.2rem;
+  color: white;
+}
+.consultants-div .icon-sm1,
+.consultants-div .icon-sm2 {
+  cursor: pointer;
+}
+.consultants-div .icon-sm1:hover i,
+.consultants-div .icon-sm2:hover i {
+  color: #14bf98;
+}
+.consultants-div .icon-sm1:hover path,
+.consultants-div .icon-sm2:hover path {
+  fill: white;
+}
+.about {
+  padding: 10rem 20rem;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+.about img {
+  width: 51.5rem;
+  height: 35rem;
+  border-radius: 0.5rem;
+}
+.about-content .title {
+  color: #14bf98;
+  font-size: 1.3rem;
+}
+.about-content h1 {
+  font-size: 2.8rem;
+  color: #484a46;
+}
+.about-content > p {
+  padding-top: 0.5rem;
+  font-size: 1.6rem;
+  color: #787976;
+  padding-bottom: 2rem;
+}
+.about-content ul {
+  padding-left: 2rem;
+  list-style-type: square;
+  margin-bottom: 2rem;
+}
+.about-content ul li {
+  font-size: 1.6rem;
+  color: #787976;
+  margin-bottom: 1rem;
+}
+.about-content ul li::marker {
+  color: #14bf98;
+}
+.about-content .numbers {
+  display: flex;
+  gap: 3rem;
+}
+.about-content .numbers div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.about-content .numbers .num {
+  font-size: 4.7rem;
+  color: #14bf98;
+  font-weight: 700;
+}
+.about-content .numbers .text {
+  font-size: 1.4rem;
+  color: #787976;
+}
+.contact {
+  display: flex;
+  padding: 10rem 20rem;
+  gap: 5rem;
+  background-color: #fbfbfb;
+}
+.contact-content {
+  width: 55rem;
+}
+.contact .title {
+  color: #14bf98;
+  font-size: 1.3rem;
+}
+.contact h1 {
+  font-size: 2.8rem;
+  color: #484a46;
+  margin-bottom: 2rem;
+}
+.contact .contact-content p {
+  font-size: 1.6rem;
+  color: #787976;
+  margin-bottom: 1rem;
+}
+.contact h2 {
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  color: #484a46;
+  margin-bottom: 2rem;
+}
+.contact i {
+  color: #14bf98;
+}
+.contact a {
+  color: #787976;
+}
+.contact form input {
+  height: 5rem;
+  width: 46.6rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #d0d1ce;
+  background-color: white;
+  color: #787976;
+  outline: none;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+}
+.contact form input:hover,
+.contact form input:focus,
+.contact textarea:hover,
+.contact textarea:focus {
+  border: 1px solid #484a46;
+}
+.contact textarea {
+  height: 13.5rem;
+  width: 46.6rem;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  border-radius: 0.3rem;
+  padding-top: 1.5rem;
+  border: 1px solid #d0d1ce;
+  resize: vertical;
+  margin-bottom: 1.3rem;
+}
+
+.contact label {
+  font-size: 1.4rem;
+  color: #787976;
+}
+.contact form input[type="checkbox"] {
+  height: 2rem;
+  width: 1.3rem;
+  position: relative;
+  top: 0.5rem;
+  margin-right: 0.5rem;
+}
+.contact form input[type="submit"] {
+  padding-right: 2.3rem;
+  background-color: #14bf98;
+  color: white;
+  border: 1px solid #14bf98;
+  transition: 0.1s linear;
+}
+.contact form input[type="submit"]:hover {
+  background-color: transparent;
+  color: #14bf98;
+}
+.contact .logo-container i {
+  color: white;
+  position: relative;
+  top: -2.2rem;
+  left: -3.5rem;
+  font-size: 2rem;
+}
+.contact .logo-container span {
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.contact .logo-container span:hover i {
+  color: #14bf98;
+}
+.contact .logo-container span:hover path {
+  fill: white;
+}
+footer {
+  background-color: #113448;
+  color: white;
+  padding: 7rem 20rem 3rem 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 14rem;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+footer .footer-content p,
+a {
+  font-size: 1.4rem;
+  color: #dfe5ec;
+}
+footer .copyright {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #dfe5ec;
+}
+path {
+  fill: #14bf98;
+}
