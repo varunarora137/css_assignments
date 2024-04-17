@@ -45,7 +45,7 @@ body {
 .navbar .links-logo ul li a:hover {
   color: #14bf98;
 }
-.navbar .links-logo ul li i:hover {
+.navbar .links-logo ul li span:hover i {
   color: #14bf98;
 }
 .navbar .links-logo {
