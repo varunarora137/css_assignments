@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The November Room</title>
+  </head>
+  <body class="bg-black overflow-x-hidden text-white">
+    <header class="relative h-[100vh] w-[100vw] flex">
+      <div
+        class="bg-[url('./img1.jpeg')] h-[100vh] w-[100vw] bg-cover opacity-25"
+      ></div>
+      <nav
+        class="main absolute flex justify-between w-[100vw] px-6 py-5 text-white top-0"
+      >
+        <h3 class="font-bold text-lg hover:cursor-pointer">
+          THE NOVEMBER ROOM
+        </h3>
+        <div
+          class="social-media-icons text-[#F97316] text-lg hover:cursor-pointer"
+        >
+          <i class="fa-brands fa-facebook mr-4"></i>
+          <i class="fa-brands fa-twitter mr-4"></i>
+          <i class="fa-brands fa-linkedin mr-4"></i>
+        </div>
+      </nav>
+      <div
+        class="absolute text-white flex top-52 justify-center w-[100vw] items-center flex flex-col"
+      >
+        <p class="text-5xl font-semibold mb-4">
+          Feel the <span class="text-[#F97316]">Power</span>
+        </p>
+        <p class="text-lg text-[#ABABAE]">
+          Welcome to The November Room. We are a fitness and training center
+          that focuses on
+        </p>
+        <p class="text-lg text-[#ABABAE]">
+          pushing you to your absolute limit. Download our complete brochure to
+          get started today!
+        </p>
+        <button
+          class="mt-4 px-4 py-4 border-2 border-[#F97316] rounded text-[#3B75D4] hover:text-white hover:bg-[#F97316]"
+        >
+          Download Brochure
+        </button>
+      </div>
+    </header>
+    <div class="about w-[100vw] h-[120vh] py-4 px-32 flex gap-56 items-center">
+      <div class="img h-[80%] w-[36%]">
+        <img src="./img2.jpeg" alt="workout" class="rounded" />
+      </div>
+      <div class="w-[40%]">
+        <p class="text-[#F97316] text-xs">About our gym</p>
+        <p class="text-4xl font-semibold mb-4">SAFE BODY BUILDING</p>
+        <p class="text-lg mb-8">
+          The extension comes with three pre-built pages to help you get started
+          faster. You can change the text and images and you're good to go.
+        </p>
+        <div class="flex gap-4 mb-10">
+          <i class="fas fa-dumbbell fa-2x text-[#F97316]"></i>
+          <p class="text-xl">latest & gratest gym equipment</p>
+        </div>
+        <div class="flex gap-4 mb-10">
+          <i class="fas fa-hard-hat fa-2x text-[#F97316]"></i>
+          <p class="text-xl">5-inch,qulity foam floor padding</p>
+        </div>
+        <div class="flex gap-4 mb-10">
+          <i class="fa-solid fa-users fa-2x text-[#F97316]"></i>
+          <p class="text-xl">3 professioonal trainers</p>
+        </div>
+      </div>
+    </div>
+    <div class="trainers flex flex-col bg-white pt-16 pb-48">
+      <div class="content text-center">
+        <p class="text-4xl text-black font-semibold mb-4">MEET OUR TRAINERS</p>
+        <p class="text-lg text-[#52525B]">
+          Our trainers are are here to dedicate the time and effort that you
+          need to get in the
+        </p>
+        <p class="text-lg text-[#52525B] mb-32">best shape of your life</p>
+      </div>
+      <div class="trainers-img flex mx-36 gap-48">
+        <div class="flex flex-col flex-1 items-center">
+          <img src="./img3.jpeg" alt="img" class="w-64 rounded" />
+          <p class="text-black text-lg font-bold mt-6">Mr rogers</p>
+          <p class="text-[#52525B] text-sm font-semibold mt-1">
+            NEIGHBORHOOD WATCHMAN
+          </p>
+        </div>
+        <div class="flex flex-col flex-1 items-center">
+          <img src="./img4.jpeg" alt="img" class="w-64 rounded" />
+          <p class="text-black text-lg font-bold mt-6">Strawberry Shortcake</p>
+          <p class="text-[#52525B] text-sm font-semibold mt-1">
+            CUPCAKE SMASHER
+          </p>
+        </div>
+        <div class="flex flex-col flex-1 items-center">
+          <img src="./img5.jpeg" alt="img" class="w-64 rounded" />
+          <p class="text-black text-lg font-bold mt-6">Ronald McDonald</p>
+          <p class="text-[#52525B] text-sm font-semibold mt-1">
+            DOUBLE WHOOPASS WITH CHEESE
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-[100vw] h-[136vh] relative bg-[#D4D4D8]">
+      <div
+        class="-top-6 form h-[136vh] w-[100vw] z-4 absolute -skew-y-2 bg-black flex flex-col items-center"
+      >
+        <div class="flex flex-col skew-y-2 text-center pt-32">
+          <p class="text-4xl font-semibold mb-4">CONTACT US</p>
+          <p class="text-lg">
+            Contact us to ask any questions, aquire a membership, talk to our
+            trainers or anything
+          </p>
+          <p class="text-lg">else</p>
+        </div>
+        <div
+          class="mt-24 bg-[#F97316] py-10 w-[46%] skew-y-2 rounded px-10 flex flex-col"
+        >
+          <p class="text-2xl font-semibold mb-1">Want to work with us?</p>
+          <p class="mb-8">
+            Complete this form and we will get back to you in 24 hours.
+          </p>
+          <form class="flex flex-col">
+            <label for="name" class="text-xs font-bold mb-2">FULL NAME</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              class="text-sm py-3 border outline-[#2563EB] border-[#71717A] px-4 rounded mb-2"
+            />
+            <label for="email" class="text-xs font-bold mb-2">EMAIL</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="text-sm py-3 border outline-[#2563EB] border-[#71717A] px-4 rounded mb-2"
+            />
+            <label for="msg" class="text-xs font-bold mb-2">MESSAGE</label>
+            <textarea
+              cols="30"
+              rows="4"
+              class="text-sm py-3 border outline-[#2563EB] border-[#71717A] px-4 rounded mb-2"
+              placeholder="Type a message..."
+            ></textarea>
+            <input
+              type="submit"
+              value="SEND MESSAGE"
+              class="bg-black px-1 py-3 w-40 ml-56 mt-6 rounded text-white hover:cursor-pointer text-sm font-bold hover:shadow-lg"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="top-[136vh] w-[100vw] h-[1px] bg-black absolute"></div>
+    </div>
+    <footer class="bg-[#D4D4D8] pt-8 px-8">
+      <p class="text-black font-semibold text-3xl">Follow us on Social Media</p>
+      <p class="text-[#3F3F46] text-lg mb-6">
+        Find us on any of these platforms, we respond 1-2 business days.
+      </p>
+      <div class="icons flex gap-2 pb-6 w-[100vw]">
+        <div class="w-10 relative hover:cursor-pointer">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="white" />
+          </svg>
+          <i
+            class="fa-brands fa-twitter text-[#60A5FA] absolute bottom-3 left-3"
+          ></i>
+        </div>
+        <div class="w-10 relative hover:cursor-pointer">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="white" />
+          </svg>
+          <i
+            class="fa-brands fa-facebook text-[#2563EB] absolute bottom-3 left-3"
+          ></i>
+        </div>
+        <div class="w-10 relative hover:cursor-pointer">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="white" />
+          </svg>
+          <i
+            class="fa-brands fa-dribbble text-[#FD7D87] absolute bottom-3 left-3"
+          ></i>
+        </div>
+        <div class="w-10 relative hover:cursor-pointer">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="white" />
+          </svg>
+          <i
+            class="fa-brands fa-github text-black absolute bottom-3 left-3"
+          ></i>
+        </div>
+      </div>
+      <div class="bg-[#3F3F46] w-[95vw] h-[1px]"></div>
+      <div>
+        <p class="text-[#3F3F46] text-center py-6 text-sm font-semibold">
+          Copyright &copy; 2020 THE NOVEMBER ROOM
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
